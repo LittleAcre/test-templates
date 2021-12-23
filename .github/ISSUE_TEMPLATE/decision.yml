@@ -1,5 +1,5 @@
 name: Decision
-description: Start a discussion or document a decision. This template is based on [MADR](https://adr.github.io/madr/)
+description: "Start a discussion or document a decision. This template is based on [MADR](https://adr.github.io/madr/)"
 title: "[Decision]: "
 labels: ["bug", "triage"]
 assignees:
@@ -13,9 +13,9 @@ body:
     id: status
     attributes:
       label: Status
-      description: Are you proposing this decision or is it already accepted? 
+      description: "Are you proposing this decision or is it already accepted? "
       value: proposed
-      placeholder: {proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}
+      placeholder: "{proposed | rejected | accepted | deprecated | ... | superseded by [ADR-0005](0005-example.md)}"
     validations:
       required: false
   - type: textarea
@@ -25,14 +25,14 @@ body:
       description: >
         Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
         You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.
-      placeholder: Problem X occured. How do we solve X?
+      placeholder: "Problem X occured. How do we solve X?"
     validations:
       required: true
   - type: textarea
     id: decision-drives
     attributes:
       label: Decision Drivers
-      description: Decision drivers are forces or facing concerns that drive the decision. (Smart sentence!)
+      description: "Decision drivers are forces or facing concerns that drive the decision. (Smart sentence!)"
       placeholder: |
         * {decision driver 1, e.g., a force, facing concern, …}
         * {decision driver 2, e.g., a force, facing concern, …}
@@ -51,11 +51,11 @@ body:
     id: chosen-option
     attributes:
       label: Chosen option
-      description: If applicable, the chosen option. This field should match one of the options listed above. (If you haven't decided yet, leave this field blank.)
-      placeholder: {option 1}
+      description: "If applicable, the chosen option. This field should match one of the options listed above. (If you haven't decided yet, leave this field blank.)"
+      placeholder: "{option 1}"
   - type: input
     id: chosen-option-because
     attributes:
       label: because
-      description: If applicable, a short justification of the chosen option. (If you haven't decided yet, leave this field blank.)
-      placeholder: {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+      description: "If applicable, a short justification of the chosen option. (If you haven't decided yet, leave this field blank.)"
+      placeholder: "{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}."
