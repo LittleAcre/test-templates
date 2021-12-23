@@ -52,8 +52,8 @@ body:
     attributes:
       label: Decision Outcome
       description: >
-        "If applicable, the chosen option and a short justification. The chosen option should match one of the options listed above.
-        If you haven't decided yet, leave this field blank."
+        If applicable, the chosen option and a short justification. The chosen option should match one of the options listed above.
+        If you haven't decided yet, leave this field blank.
       placeholder: >
         Chosen option: "{option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver 
         | which resolves force {force} | … | comes out best (see below)}.
