@@ -47,15 +47,49 @@ body:
         * {option 2}
     validations:
       required: true
-  - type: input
-    id: chosen-option
+  - type: textarea
+    id: decision-outcome
     attributes:
-      label: Chosen option
-      description: "If applicable, the chosen option. This field should match one of the options listed above. (If you haven't decided yet, leave this field blank.)"
-      placeholder: "{option 1}"
-  - type: input
-    id: chosen-option-because
+      label: Decision Outcome
+      description: >
+        "If applicable, the chosen option and a short justification. The chosen option should match one of the options listed above.
+        If you haven't decided yet, leave this field blank."
+      placeholder: >
+        Chosen option: "{option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver 
+        | which resolves force {force} | … | comes out best (see below)}.
+      value: >
+        Chosen option: "", because
+ - type: textarea
+    id: pros-and-cons
     attributes:
-      label: because
-      description: "If applicable, a short justification of the chosen option. (If you haven't decided yet, leave this field blank.)"
-      placeholder: "{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}."
+      label: Pro and Cons of the Options
+      description: >
+        More detailed discussion of each option.
+      placeholder: |
+        #### {option 1}
+        
+        {example | description | pointer to more information | …} <!-- This is an optional element. Feel free to remove. -->
+
+        * Good, because {argument a}
+        * Good, because {argument b}
+        * Bad, because {argument c}
+        * … <!-- numbers of pros and cons can vary -->
+      value: |
+        #### {option 1}
+        
+        * Good, because 
+        * Bad, because 
+ - type: textarea
+    id: more-information
+    attributes:
+      label: More information
+      description: >
+        If you have anything else to add, this is the place!
+        
+        You might want to provide additional evidence/confidence for the decision outcome here and/or
+        document the team agreement on the decision and/or
+        define when this decision when and how the decision should be realized and if/when it should be re-visited and/or
+        how the decision is validated.
+        Links to other decisions and resources might here appear as well.
+      placeholder: >
+        Replace me by useful information!
