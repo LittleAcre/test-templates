@@ -59,7 +59,7 @@ body:
         | which resolves force {force} | … | comes out best (see below)}.
       value: >
         Chosen option: "", because
- - type: textarea
+  - type: textarea
     id: pros-and-cons
     attributes:
       label: Pro and Cons of the Options
@@ -79,7 +79,7 @@ body:
         
         * Good, because 
         * Bad, because 
- - type: textarea
+  - type: textarea
     id: more-information
     attributes:
       label: More information
